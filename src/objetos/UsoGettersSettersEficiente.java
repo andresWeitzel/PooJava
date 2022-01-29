@@ -9,32 +9,22 @@ public class UsoGettersSettersEficiente {
 	public static void main(String[] args) {
 		
 		
-		//INSTANCIAMOS LA CLASE CON CONSTRUCTOR COMPLETO 
-		Notebook notebook01 = new Notebook(1,"Lenovo IdeaPad 3i","Lenovo",95.000);
-		Notebook notebook02 = new Notebook(2,"HP 240 G7","HP",77.000);
-		Notebook notebook03 = new Notebook(3,"Asus x543ua","Asus",80.000);
-				
+		Notebook notebook01 = new Notebook(1, "20TES0X200","Lenovo ThinkPad E15 2da Gen","ThinkPad",179.999);
+		Notebook notebook02 = new Notebook(2, "RZ09-02812EQ1","Razer Blade 15","Razer",460.786);
+		Notebook notebook03 = new Notebook(3, "AT550","Notebook BGH Positivo","BGH",59.849);
 		
-		
-		//INSTANCIAMOS LA CLASE CON CONSTRUCTOR VACIO
 		Notebook notebook04 = new Notebook();
-						
-		//IMPLEMENTAMOS LOS GETTERS Y SETTERS
+		
 		notebook04.setId(4);
-		notebook04.setNombre("Lenovo Legion 5 PRO");
-		notebook04.setMarca("Lenovo");
-		notebook04.setPrecio(341.000);
+		notebook04.setModelo("82A3001FAR");
+		notebook04.setNombre("Yoga Slim 7i 14\" - Slate Grey");
+		notebook04.setMarca("Yoga");
+		notebook04.setPrecio(156.999);
 		
 		
-		
-		
-		
-		//MOSTRAMOS EL CONTENIDO
 		System.out.println("\n---------------------------");
-		System.out.println("-----TIENDA DE NOTEBOOKS----");
-		System.out.println("---------------------------");
-		System.out.println("\n");
-		
+		System.out.println("--- TIENDA DE NOTEBOOKS ---");
+		System.out.println("---------------------------\n");
 		
 		System.out.println(notebook01.toString());
 		System.out.println(notebook02.toString());
@@ -42,174 +32,248 @@ public class UsoGettersSettersEficiente {
 		System.out.println(notebook04.toString());
 		
 		
-		
 		//MOSTRAMOS SOLO LAS MARCAS
-		System.out.println("\n === MARCAS ===\n");
-		System.out.println("ID: "+notebook01.id+" | Marca: "+notebook01.getMarca());
-		System.out.println("ID: "+notebook02.id+" | Marca: "+notebook02.getMarca());
-		System.out.println("ID: "+notebook03.id+" | Marca: "+notebook03.getMarca());
-		System.out.println("ID: "+notebook04.id+" | Marca: "+notebook04.getMarca());
+		System.out.println("\n === MARCAS ===");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |   MARCAS");
+		System.out.println("------------------");
+		
+		System.out.println("    "+notebook01.getId()+"    "+notebook01.getMarca());
+		System.out.println("    "+notebook02.getId()+"    "+notebook02.getMarca());
+		System.out.println("    "+notebook03.getId()+"    "+notebook03.getMarca());
+		System.out.println("    "+notebook04.getId()+"    "+notebook04.getMarca());
+
+		System.out.println("\n----------------------------------------");
 		
 		
 		//MOSTRAMOS SOLO LOS NOMBRES
-		System.out.println("\n === NOMBRES ===\n");
-		System.out.println("ID: "+notebook01.id+" | Nombre: "+notebook01.getNombre());
-		System.out.println("ID: "+notebook02.id+" | Nombre: "+notebook02.getNombre());
-		System.out.println("ID: "+notebook03.id+" | Nombre: "+notebook03.getNombre());
-		System.out.println("ID: "+notebook04.id+" | Nombre: "+notebook04.getNombre());
+		System.out.println("\n === NOMBRES ===");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |   NOMBRES");
+		System.out.println("------------------");
+		
+		System.out.println("    "+notebook01.getId()+"    "+notebook01.getNombre());
+		System.out.println("    "+notebook02.getId()+"    "+notebook02.getNombre());
+		System.out.println("    "+notebook03.getId()+"    "+notebook03.getNombre());
+		System.out.println("    "+notebook04.getId()+"    "+notebook04.getNombre());
 
 		
-		//MOSTRAMOS SOLO LOS PRECIOS
-		System.out.println("\n === PRECIOS ===\n");
-		System.out.println("ID: "+notebook01.id+" | Precio: "+notebook01.getPrecio());
-		System.out.println("ID: "+notebook02.id+" | Precio: "+notebook02.getPrecio());
-		System.out.println("ID: "+notebook03.id+" | Precio: "+notebook03.getPrecio());
-		System.out.println("ID: "+notebook04.id+" | Precio: "+notebook04.getPrecio());
-
+		System.out.println("\n----------------------------------------");
 		
-		//AUMENTAMOS LOS PRECIOS DE LA MARCA LENOVO
-		System.out.println("\n === SE AUMENTA EL PRECIO DE LA MARCA LENOVO ===\n");
-				
-		if(notebook01.getMarca() == "Lenovo" ) {
-			
-			notebook01.setPrecio( (notebook01.getPrecio()) + 20.000 );
-		}
-		if(notebook02.getMarca() == "Lenovo" ) {
-			
-			notebook02.setPrecio( (notebook02.getPrecio()) + 20.000 );
-		}
-		if(notebook03.getMarca() == "Lenovo" ) {
-			
-			notebook03.setPrecio( (notebook03.getPrecio()) + 20.000 );
-		}
-		if(notebook04.getMarca() == "Lenovo" ) {
-			
-			notebook04.setPrecio( (notebook04.getPrecio()) + 20.000 );
-		}
+		
+		//MOSTRAMOS SOLO LAS MODELO
+		System.out.println("\n === MODELO ===");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |   MODELOS");
+		System.out.println("------------------");
+		
+		System.out.println("    "+notebook01.getId()+"    "+notebook01.getModelo());
+		System.out.println("    "+notebook02.getId()+"    "+notebook02.getModelo());
+		System.out.println("    "+notebook03.getId()+"    "+notebook03.getModelo());
+		System.out.println("    "+notebook04.getId()+"    "+notebook04.getModelo());
+
+		System.out.println("\n----------------------------------------");
+		
 		
 		
 		//MOSTRAMOS SOLO LOS PRECIOS
-		System.out.println("\n === PRECIOS ===\n");
-		System.out.println("ID: "+notebook01.id+" | Precio: "+notebook01.getPrecio());
-		System.out.println("ID: "+notebook02.id+" | Precio: "+notebook02.getPrecio());
-		System.out.println("ID: "+notebook03.id+" | Precio: "+notebook03.getPrecio());
-		System.out.println("ID: "+notebook04.id+" | Precio: "+notebook04.getPrecio());
+		System.out.println("\n === PRECIOS ===");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |   PRECIOS");
+		System.out.println("------------------");
+		
+		System.out.println("    "+notebook01.getId()+"    "+notebook01.getPrecio());
+		System.out.println("    "+notebook02.getId()+"    "+notebook02.getPrecio());
+		System.out.println("    "+notebook03.getId()+"    "+notebook03.getPrecio());
+		System.out.println("    "+notebook04.getId()+"    "+notebook04.getPrecio());
 
 		
+		System.out.println("\n----------------------------------------");
 		
-		// Y SI TENEMOS 400 OBJETOS?? COMPLICADO TODO A MANO 
+		//AUMENTAMOS PRECIOS POR MARCA
+		System.out.println("\n == SE AUMENTA EL PRECIO POR MARCA ==");
+		
+		if(notebook01.getMarca() == "ThinkPad") {
+			
+			notebook01.setPrecio(notebook01.getPrecio() + 5.000);
+		}
+		if(notebook02.getMarca() == "ThinkPad") {
+			
+			notebook02.setPrecio(notebook02.getPrecio() + 5.000);
+		}
+		if(notebook03.getMarca() == "ThinkPad") {
+			
+			notebook03.setPrecio(notebook03.getPrecio() + 5.000);
+		}
+		if(notebook04.getMarca() == "ThinkPad") {
+			
+			notebook04.setPrecio(notebook04.getPrecio() + 5.000);
+		}
+		
+		
+		System.out.println("\n----------------------------------------");
 		
 		
 		
+		//MOSTRAMOS SOLO LOS PRECIOS
+		System.out.println("\n === PRECIOS ===");
 		
+		System.out.println("------------------");
+		System.out.println(" ID   |   PRECIOS");
+		System.out.println("------------------");
 		
-		System.out.println("\n||||||||||||||||||||||||||||||||||||||||");
-		System.out.println("||||||| CÓDIGO EFICIENTE POO |||||||||||");
-		System.out.println("||||||||||||||||||||||||||||||||||||||||\n");
+		System.out.println("    "+notebook01.getId()+"    "+notebook01.getPrecio());
+		System.out.println("    "+notebook02.getId()+"    "+notebook02.getPrecio());
+		System.out.println("    "+notebook03.getId()+"    "+notebook03.getPrecio());
+		System.out.println("    "+notebook04.getId()+"    "+notebook04.getPrecio());
+
 		
+		System.out.println("\n----------------------------------------");
 		
+	
 		
-		//USAMOS LISTAS(COLECCIONES) Y FOR EACH PARA GUARDAR Y RECORRER DICHOS OBJETOS
-				
-		List<Notebook> listaNotebooks = new ArrayList<Notebook>();		
-				
+		System.out.println("\n---------------------------");
+		System.out.println("--- CÓDIGO EFICIENTE ---");
+		System.out.println("---------------------------\n");
+		
+		//Usamos Listas (colecciones) y For Eachs para guardar y recorrer dichos objetos
+		
+		//No es necesario pasarle el tipo de lista en el constructor
+		//List<Notebook> listaNotebook = new ArrayList<Notebook>();
+		List<Notebook> listaNotebooks = new ArrayList();
 		
 		
 		listaNotebooks.add(notebook01);
 		listaNotebooks.add(notebook02);
 		listaNotebooks.add(notebook03);
 		listaNotebooks.add(notebook04);
-				
 		
 		
-		
-
-		
-		//MOSTRAMOS EL CONTENIDO
-		System.out.println("\n---------------------------");
-		System.out.println("-----TIENDA DE NOTEBOOKS----");
-		System.out.println("---------------------------");
-		System.out.println("\n");
-		
-		
-		//CON EL FOR EACH ITERAMOS ELEMENTO A ELEMENTO
-		for(Notebook notebook : listaNotebooks) {
+		//ITERAMOS ELEMENTO A ELEMENTO CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
 			
-			System.out.println(notebook);
+			System.out.println(objetoNotebook);
 		}
 		
+		System.out.println("\n===================================");
 		
-		//MOSTRAMOS SOLO LAS MARCAS
-		System.out.println("\n === MARCAS ===\n");
-		for(Notebook notebook : listaNotebooks) {
-			
-			System.out.println("ID: "+notebook.id+" | Marca: "+notebook.getMarca());
-			
-		}
-		
-		//MOSTRAMOS SOLO LAS NOMBRES
-		System.out.println("\n === NOMBRES ===\n");
-		for(Notebook notebook : listaNotebooks) {
-			
-			System.out.println("ID: "+notebook.id+" | Nombre: "+notebook.getNombre());
-			
-		}
-		
-		//MOSTRAMOS SOLO LOS PRECIOS
-		System.out.println("\n === PRECIOS ===\n");
-		for(Notebook notebook : listaNotebooks) {
+		System.out.println("------------------");
+		System.out.println(" ID   |   MARCAS");
+		System.out.println("------------------");
+		//ITERAMOS TODAS LAS MARCAS CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
 					
-			System.out.println("ID: "+notebook.id+" | Precio: "+notebook.getPrecio());
-					
+			System.out.println("    "+objetoNotebook.getId()+"    "+objetoNotebook.getMarca());
 		}
 		
 		
-		//AUMENTAMOS LOS PRECIOS DE LA MARCA LENOVO
-		System.out.println("\n === SE AUMENTA EL PRECIO DE LA MARCA LENOVO ===\n");
-		for(Notebook notebook : listaNotebooks) {
-							
-			if(notebook.getMarca()=="Lenovo") {
+		System.out.println("\n===================================");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |   NOMBRES");
+		System.out.println("------------------");
+		//ITERAMOS TODAS LOS NOMBRES CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
+					
+			System.out.println("    "+objetoNotebook.getId()+"    "+objetoNotebook.getNombre());
+		}
+		
+		
+		System.out.println("\n===================================");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |  MODELOS");
+		System.out.println("------------------");
+		//ITERAMOS TODAS LOS MODELOS CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
+					
+			System.out.println("    "+objetoNotebook.getId()+"    "+objetoNotebook.getModelo());
+		}
+		
+		
+		System.out.println("\n===================================");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |  PRECIOS");
+		System.out.println("------------------");
+		//ITERAMOS TODAS LOS PRECIOS CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
+					
+			System.out.println("    "+objetoNotebook.getId()+"    "+objetoNotebook.getPrecio());
+		}
+		
+		
+		
+		System.out.println("\n===================================");
+		
+		System.out.println(" === SE AUMENTA EL PRECIO DE LA MARCA RAZER ===");
+		
+		for(Notebook objetoNotebook : listaNotebooks ) {
+					
+			if(objetoNotebook.getMarca() == "Razer") {
 				
-				notebook.setPrecio( (notebook.getPrecio()) + 20.000);
+				objetoNotebook.setPrecio(objetoNotebook.getPrecio() + 2.000);
 			}
+			
 		}
 		
-		//MOSTRAMOS SOLO LOS PRECIOS
-		System.out.println("\n === PRECIOS ===\n");
-		for(Notebook notebook : listaNotebooks) {
-							
-			System.out.println("ID: "+notebook.id+" | Precio: "+notebook.getPrecio());
-							
+		
+		
+		
+		System.out.println("\n===================================");
+		
+		System.out.println("------------------");
+		System.out.println(" ID   |  PRECIOS");
+		System.out.println("------------------");
+		//ITERAMOS TODAS LOS PRECIOS CON EL FOREACH
+		for(Notebook objetoNotebook : listaNotebooks ) {
+					
+			System.out.println("    "+objetoNotebook.getId()+"    "+objetoNotebook.getPrecio());
 		}
-				
-				
+		
 		
 		
 		
 	}
-}
 
+
+}
 
 class Notebook{
 	
-	//ATRIBUTOS-CAMPOS DE LA CLASE
 	public int id;
+	public String modelo;
 	public String nombre;
 	public String marca;
 	public double precio;
 	
-	//CONSTRUCTORES DE LA CLASE
-
-	//Parametrizado
-	public Notebook(int id,String nombre, String marca, double precio) {
+	
+	
+	
+	
+	public Notebook(int id, String modelo, String nombre, String marca, double precio) {
 		super();
 		this.id = id;
+		this.modelo = modelo;
 		this.nombre = nombre;
 		this.marca = marca;
 		this.precio = precio;
 	}
-	
-	//Vacio
+
+
+	public Notebook(String codigo, String nombre, String marca, double precio) {
+		super();
+		this.modelo = codigo;
+		this.nombre = nombre;
+		this.marca = marca;
+		this.precio = precio;
+	}
+
+
 	public Notebook() {
 		super();
 	}
@@ -218,45 +282,81 @@ class Notebook{
 	
 	
 	
-	//METODOS GETTERS Y SETTERS
+	
 
 	public int getId() {
-		
 		return id;
 	}
-	
+
+
 	public void setId(int id) {
-		this.id=id;
+		this.id = id;
 	}
-	
+
+
+	public String getModelo() {
+		return modelo;
+	}
+
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+
 	public String getNombre() {
 		return nombre;
 	}
+
 
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
 
+
 	public String getMarca() {
 		return marca;
 	}
 
+
 	public void setMarca(String marca) {
 		this.marca = marca;
 	}
-	
+
+
 	public double getPrecio() {
 		return precio;
 	}
+
 
 	public void setPrecio(double precio) {
 		this.precio = precio;
 	}
 
+
 	
-	//METODO TOSTRING
 	@Override
 	public String toString() {
-		return "Notebook [ID = "+id+" , Nombre = " + nombre + ", Marca = " + marca + " , Precio = "+precio+" ]";
+		return "Notebook [id=" + id + ", modelo=" + modelo + ", nombre=" + nombre + ", marca=" + marca + ", precio="
+				+ precio + "]";
 	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
 }
+
+
+
+
+
+
+

@@ -4,7 +4,7 @@ public class TestPersona {
 	
 	public static void main(String[] args) {
 
-		Persona javierRamirez = new Persona();
+Persona javierRamirez = new Persona();
 
 		
 		//CON UN MODIFICADOR PUBLICO PODEMOS ACCEDER AL ATRIBUTO FUERA Y DENTRO DEL
@@ -27,7 +27,7 @@ public class TestPersona {
 		//AL UTILIZAR MODIFICADORES PRIVADOS NO TENEMOS VISIBILIDAD FUERA DE LA CLASE
 		//A MENOS QUE USEMOS UN SETTER U OTRO METODO
 		//javierRamirez.nroCuentaSecundaria = "LLSG6653GDTY99";
-		javierRamirez.setNroCuentaSecundaria("LLSG6653GDTY99");
+		//javierRamirez.setNroCuentaSecundaria("LLSG6653GDTY99");
 		
 		System.out.println(javierRamirez.toString());
 		
@@ -39,9 +39,9 @@ public class TestPersona {
 		System.out.println(javierRamirez.toString());
 		
 		
-		
-		
 	}
+	
+	
 	
 
 	

@@ -13,40 +13,40 @@ fuera del paquete no podran acceder a la propiedad o metodo
  heredan de la clase fuera del paquete.
 
 == PUBLIC == la propiedad o método es accesible desde cualquier método de otra clase.
+Dentro o fuera del paquete
 
 */
 
 public class Persona {
 	
-
-
-	
 	public int id; //public
 	
-	String nombre;//default
+	String nombre; //default
 	
-	String apellido;//default
+	String apellido; //default
 	
 	String nroCuentaPrincipal;//default
 	
-	private String nroCuentaSecundaria;//privado 
+	private String nroCuentaSecundario;//private
 	
-	protected double saldo;//protegido
+	protected double saldo;//protected
 
 	
 	
-	public Persona(int id, String nombre, String apellido, String nroCuentaPrincipal, String nroCuentaSecundaria,
+	
+	
+	public Persona(int id, String nombre, String apellido, String nroCuentaPrincipal, String nroCuentaSecundario,
 			double saldo) {
 		super();
 		this.id = id;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.nroCuentaPrincipal = nroCuentaPrincipal;
-		this.nroCuentaSecundaria = nroCuentaSecundaria;
+		this.nroCuentaSecundario = nroCuentaSecundario;
 		this.saldo = saldo;
 	}
-	
-	
+
+
 
 
 
@@ -64,9 +64,13 @@ public class Persona {
 
 
 
+
+
 	public void setId(int id) {
 		this.id = id;
 	}
+
+
 
 
 
@@ -76,9 +80,13 @@ public class Persona {
 
 
 
+
+
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
+
+
 
 
 
@@ -88,9 +96,13 @@ public class Persona {
 
 
 
+
+
 	public void setApellido(String apellido) {
 		this.apellido = apellido;
 	}
+
+
 
 
 
@@ -100,21 +112,29 @@ public class Persona {
 
 
 
+
+
 	public void setNroCuentaPrincipal(String nroCuentaPrincipal) {
 		this.nroCuentaPrincipal = nroCuentaPrincipal;
 	}
 
 
 
-	public String getNroCuentaSecundaria() {
-		return nroCuentaSecundaria;
+
+
+	public String getNroCuentaSecundario() {
+		return nroCuentaSecundario;
 	}
 
 
 
-	public void setNroCuentaSecundaria(String nroCuentaSecundaria) {
-		this.nroCuentaSecundaria = nroCuentaSecundaria;
+
+
+	public void setNroCuentaSecundario(String nroCuentaSecundario) {
+		this.nroCuentaSecundario = nroCuentaSecundario;
 	}
+
+
 
 
 
@@ -124,19 +144,28 @@ public class Persona {
 
 
 
+
+
 	public void setSaldo(double saldo) {
 		this.saldo = saldo;
 	}
 
 
 
+
+
 	@Override
 	public String toString() {
 		return "Persona [id=" + id + ", nombre=" + nombre + ", apellido=" + apellido + ", nroCuentaPrincipal="
-				+ nroCuentaPrincipal + ", nroCuentaSecundaria=" + nroCuentaSecundaria + ", saldo=" + saldo + "]";
+				+ nroCuentaPrincipal + ", nroCuentaSecundario=" + nroCuentaSecundario + ", saldo=" + saldo + "]";
 	}
+	
 
 	
+	
+	
+	
+
 	
 	
 

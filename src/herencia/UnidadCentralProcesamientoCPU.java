@@ -2,119 +2,176 @@ package herencia;
 
 public class UnidadCentralProcesamientoCPU {
 
+
+
 	//Para que entiendas un poco de arquitectura de computadoras te recomiendo..
 	//http://homepage.cem.itesm.mx/garcia.andres/PDF201411/Arquitectura%20Computacional.pdf
 	
 	
 	
 	// https://www.pccomponentes.com/procesador-cpu-que-es-caracteristicas-tipos
-	int id;
-	String modelo;// Intel Celeron 550 j
-	String fabricante;// Intel,amd,etc
-	String codigo;// hj56yyyt7
-	String frecuencia;// Mhz Ghz
-	double consumo;// 120W
-	int nro_nucleos;
-	String tipo_cache;// L1,L2,L3
 
-	public UnidadCentralProcesamientoCPU(int id, String modelo, String fabricante, String codigo, String frecuencia,
-			double consumo, int nro_nucleos, String tipo_cache) {
-
+	long id;
+	String codigo;//KILOU8-1112
+	String modelo;//Intel® Pentium® G4560
+	String fabricante;//Intel, AMD, etc
+	String frecuencia;//3.50 Mhz
+	String consumo;//54 W
+	int nroNucleosFisicos;//2
+	String tipoMemoria;//DDR4-2133/2400, DDR3L-1333/1600 @ 1.35V
+	
+	
+	
+	public UnidadCentralProcesamientoCPU(long id, String codigo, String modelo, String fabricante, String frecuencia,
+			String consumo, int nroNucleosFisicos, String tipoMemoria) {
+		super();
 		this.id = id;
+		this.codigo = codigo;
 		this.modelo = modelo;
 		this.fabricante = fabricante;
-		this.codigo = codigo;
 		this.frecuencia = frecuencia;
 		this.consumo = consumo;
-		this.nro_nucleos = nro_nucleos;
-		this.tipo_cache = tipo_cache;
+		this.nroNucleosFisicos = nroNucleosFisicos;
+		this.tipoMemoria = tipoMemoria;
 	}
-
-	public UnidadCentralProcesamientoCPU(String modelo, String fabricante, String codigo, String frecuencia,
-			double consumo, int nro_nucleos, String tipo_cache) {
-
-		this.modelo = modelo;
-		this.fabricante = fabricante;
-		this.codigo = codigo;
-		this.frecuencia = frecuencia;
-		this.consumo = consumo;
-		this.nro_nucleos = nro_nucleos;
-		this.tipo_cache = tipo_cache;
-	}
+	
+	
+	
 
 	public UnidadCentralProcesamientoCPU() {
-
+		super();
 	}
 
-	public int getId() {
+
+
+
+	public long getId() {
 		return id;
 	}
 
-	public void setId(int id) {
+
+
+
+	public void setId(long id) {
 		this.id = id;
 	}
 
-	public String getModelo() {
-		return modelo;
-	}
 
-	public void setModelo(String modelo) {
-		this.modelo = modelo;
-	}
 
-	public String getFabricante() {
-		return fabricante;
-	}
-
-	public void setFabricante(String fabricante) {
-		this.fabricante = fabricante;
-	}
 
 	public String getCodigo() {
 		return codigo;
 	}
 
+
+
+
 	public void setCodigo(String codigo) {
 		this.codigo = codigo;
 	}
+
+
+
+
+	public String getModelo() {
+		return modelo;
+	}
+
+
+
+
+	public void setModelo(String modelo) {
+		this.modelo = modelo;
+	}
+
+
+
+
+	public String getFabricante() {
+		return fabricante;
+	}
+
+
+
+
+	public void setFabricante(String fabricante) {
+		this.fabricante = fabricante;
+	}
+
+
+
 
 	public String getFrecuencia() {
 		return frecuencia;
 	}
 
+
+
+
 	public void setFrecuencia(String frecuencia) {
 		this.frecuencia = frecuencia;
 	}
 
-	public double getConsumo() {
+
+
+
+	public String getConsumo() {
 		return consumo;
 	}
 
-	public void setConsumo(double consumo) {
+
+
+
+	public void setConsumo(String consumo) {
 		this.consumo = consumo;
 	}
 
-	public int getNro_nucleos() {
-		return nro_nucleos;
+
+
+
+	public int getNroNucleosFisicos() {
+		return nroNucleosFisicos;
 	}
 
-	public void setNro_nucleos(int nro_nucleos) {
-		this.nro_nucleos = nro_nucleos;
+
+
+
+	public void setNroNucleosFisicos(int nroNucleosFisicos) {
+		this.nroNucleosFisicos = nroNucleosFisicos;
 	}
 
-	public String getTipo_cache() {
-		return tipo_cache;
+
+
+
+	public String getTipoMemoria() {
+		return tipoMemoria;
 	}
 
-	public void setTipo_cache(String tipo_cache) {
-		this.tipo_cache = tipo_cache;
+
+
+
+	public void setTipoMemoria(String tipoMemoria) {
+		this.tipoMemoria = tipoMemoria;
 	}
+
+
+
 
 	@Override
 	public String toString() {
-		return "UnidadCentralProcesamientoCPU [id=" + id + ", modelo=" + modelo + ", fabricante=" + fabricante
-				+ ", codigo=" + codigo + ", frecuencia=" + frecuencia + ", consumo=" + consumo + ", nro_nucleos="
-				+ nro_nucleos + ", tipo_cache=" + tipo_cache + "]";
+		return "UnidadCentralProcesamientoCPU [id=" + id + ", codigo=" + codigo + ", modelo=" + modelo + ", fabricante="
+				+ fabricante + ", frecuencia=" + frecuencia + ", consumo=" + consumo + ", nroNucleosFisicos="
+				+ nroNucleosFisicos + ", tipoMemoria=" + tipoMemoria + "]";
 	}
+
+
+	
+	
+	
+	
+	
+	
+	
+	
 
 }

@@ -51,15 +51,12 @@ class ComponenteElectronico{
 	public ComponenteElectronico(String nombre) {
 		
 		this.nombre = nombre;
-		this.marca = marca;
 
 	}
 	
 	// CONSTRUCTOR VACIO
 	public ComponenteElectronico() {
 		
-		this.nombre = nombre;
-		this.marca = marca;
 
 	}
 	

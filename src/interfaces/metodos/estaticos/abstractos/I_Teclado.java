@@ -1,4 +1,4 @@
-package interfaces.metodos.estaticos;
+package interfaces.metodos.estaticos.abstractos;
 
 public interface I_Teclado {
 	
@@ -6,7 +6,7 @@ public interface I_Teclado {
 	public abstract String medirTemperatura(boolean estado);
 	
 	
-	//JAVA 8 INCORPORO METODOS ESTATICOS Y DEFAULTS EN INTERFACES
+	//JAVA 8 INCORPORO METODOS ESTATICOS, ABSTRACTOS Y DEFAULTS EN INTERFACES
 	
 	public static String encender(boolean estado) {
 		return "Encendiendo Teclado"+ estado;

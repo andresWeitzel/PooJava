@@ -3,12 +3,6 @@ package interfaces.metodos.abstractos;
 public class Monitor implements I_Monitor {
 
 	@Override
-	public String encender() {
-		// TODO Auto-generated method stub
-		return "Encendiendo Monitor";
-	}
-
-	@Override
 	public String apagar() {
 		// TODO Auto-generated method stub
 		return "Apagando Monitor";
@@ -45,6 +39,12 @@ public class Monitor implements I_Monitor {
 	public String aumentarVolumen(boolean pulsacion) {
 		// TODO Auto-generated method stub
 		return "Aumentando Volumen : "+pulsacion;
+	}
+
+	@Override
+	public String encender() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

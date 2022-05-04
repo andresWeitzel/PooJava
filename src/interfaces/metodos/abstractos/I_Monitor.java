@@ -8,8 +8,7 @@ public interface I_Monitor {
 	//se defina, en este caso la interfaz, pero si se deberá implementar en la 
 	//clase que implemente dicha interfaz
 	
-	
-	
+
 	public abstract String encender();
 	
 	
@@ -19,6 +18,8 @@ public interface I_Monitor {
 	// APLICAMOS SOBRECARGA DE METODOS
 	
 	public abstract String bajarVolumen();
+	
+	
 	
 	public abstract String bajarVolumen(String mensaje);
 	

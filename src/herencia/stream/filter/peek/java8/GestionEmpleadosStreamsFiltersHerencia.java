@@ -2,9 +2,6 @@ package herencia.stream.filter.peek.java8;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.stream.Collectors;
 
 
 //Esta clase hereda de empleado sus caracteristicas y pasa a ser una Subclase o
@@ -48,7 +45,7 @@ public class GestionEmpleadosStreamsFiltersHerencia extends  Empleado {
 		
 
 
-		ArrayList<Empleado> listaEmpleados = new ArrayList();
+		ArrayList<Empleado> listaEmpleados = new ArrayList<Empleado>();
 		
 		listaEmpleados.add(empleado01);
 		listaEmpleados.add(empleado02);

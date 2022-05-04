@@ -1,4 +1,4 @@
-package interfaces.metodos.estaticos;
+package interfaces.metodos.estaticos.abstractos;
 
 public class Teclado implements I_Teclado{
 	

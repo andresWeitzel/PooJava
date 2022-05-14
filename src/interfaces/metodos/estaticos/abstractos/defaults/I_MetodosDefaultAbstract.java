@@ -14,6 +14,7 @@ public interface I_MetodosDefaultAbstract {
 	 * 
 	 * 
 	 * 
+	 * 
 	 * == FUNCIÓN PRINCIPAL METODOS DEFAULT== Los Metodos por defecto nos permitiran
 	 * poder implementarlos o no en una clase que implemente una interfaz. Por enda
 	 * podemos usarlos sin necesidad de sobreescritura en una clase
@@ -30,84 +31,93 @@ public interface I_MetodosDefaultAbstract {
 	 * 
 	 * == FUNCIÓN PRINCIPAL METODOS ESTATICOS== Utilizar dicho metodo segun la
 	 * declaracion propuesta en la interfaz, no podemos cambiar la firma(lo que
-	 * hace) solamente utilizarlo invocandolo con la interfaz, osea que dichos  
-	 * metodos no se implementaran, solo invocar y ademas no es necesario la creacion de un
-	 * objeto para su uso
+	 * hace) solamente utilizarlo invocandolo con la interfaz, osea que dichos
+	 * metodos no se implementaran, solo invocar y ademas no es necesario la
+	 * creacion de un objeto para su uso
 	 * 
 	 * 
 	 * 
 	 */
 
-	// ===================================================
+	// =====================================================================
 
-	// === TIPOS DE METODOS NO PERMITIDOS ===
+	// ======TIPOS DE METODOS NO PERMITIDOS========
 
-	// --STRING, BOOLEAN , ETC--
+	// String, Boolen, etc--
+
+	// Se puede pensar que solo definiendo el metodo
+	// este sera de tipo void, string, etc. Pero java
+	// lo toma como abstacto. Podemos o no colocar el abstract.
+	// pero este sera abstract public String accion(String accion) ;
 	/*
-	 * public String accion() { return "Accion"; }
+	 * public String accion01() {return "Accion";}
 	 * 
-	 * //Se puede pensar que solo definiendo el metodo //este sera de tipo void,
-	 * string, etc. Pero java //lo toma como abstacto. Podemos o no colocar el
-	 * abstract. //pero este sera abstract public String accion(String accion) ;
-	 * 
-	 * 
-	 * 
-	 * public boolean accion(boolean estado) { return estado; }
-	 * 
+	 * public boolean accion02() {return true;}
 	 */
 
-	// -- VOID--
-	/*
-	 * public void accion() { System.out.println("Accion"); };
-	 */
+	// ======TIPOS DE METODOS PERMITIDOS========
 
-	// =================================================
+	// ========= ABSTRACT ===============
+	// --- ABSTRACT VOID -----
+	// Formas de Definicion
 
-	// === TIPOS DE METODOS PERMITIDOS ===
-
-	// ==========ABSTRACT==========
-	// --ABSTRACT VOID--
-	// Formas de definicion
-
+	// Definicion completa
 	public abstract void accion_01_00();
 
-	// OJO NO EXISTE EL M.A. PROTECTED EN INTERFACES
-	// SI NO SE COLOCA ES PUBLIC
+	// OJO QUE NO EXISTE EL M.A PROTECTED EN INTREFACES
 	// protected void accion_01_01();
+
+	// Si no colocamos M.A ES DEFAULT
 	abstract void accion_01_01();
 
+	// No es necesario declarar la palabra reservada abstract
 	void accion_01_02();
 
-	// --ABSTRACT STRING, BOOLEAN, ETC--
+	// --- ABSTRACT STRING,BOOLEAN, DOUBLE -----
+
 	public abstract String accion_02_00();
 
 	abstract String accion_02_01();
 
 	String accion_02_02();
 
-	// ==========DEFAULT==========
-	// --DEFAULT VOID--
+	// ========= DEFAULT ===============
+	// --- DEFAULT VOID -----
+	// Formas de Definicion
+	
+	// Definicion completa con cuerpo vacio
+	//public default void accion_03_00() {};
+	
+	// Definicion completa con cuerpo
 	public default void accion_03_00() {
-		System.out.println("default accion_03_00");
+		System.out.println("default accion_03_00()");
 	};
-
+	
+	
 	default void accion_03_01() {
-		System.out.println("default accion_03_01");
-	};
-
-	// --ABSTRACT STRING, BOOLEAN, ETC--
-	public default String accion_04_00() {
-		return "default accion_04_00";
-	};
-
-	default String accion_04_01() {
-		return " default accion_04_01";
+		System.out.println("default accion_03_01()");
 	};
 	
-	//NO INCLUIMOS LOS METODOS STATIC POR QUE SINO TENDREMOS 
-	//QUE IMPLEMENTAR LA INTERFAZ EN LA CLASE TEST Y ESO CONLLEVA A 
-	//LA SOBREESCRITURA DE LOS METODOS ABSTRACT
-
+	//ATENTI, NO PODEMOS NO DEFINIR LA PALABRA DEFAULT PARA UN METODO
+	/*
+	void accion_03_02() {
+		System.out.println("default accion_03_01()");
+	};
+	*/
 	
+	// ---DEFAULT STRING,BOOLEAN, DOUBLE -----
 
+		public default String accion_04_00() {
+			return "default accion_04_00()";
+		};
+
+		default String accion_04_01() {
+			return "default accion_04_01()";
+		};
+
+		
+		//NO INCLUIMOS LOS METODOS STATIC POR QUE SINO TENDREMOS 
+		//QUE IMPLEMENTAR LA INTERFAZ EN LA CLASE TEST Y ESO CONLLEVA A 
+		//LA SOBREESCRITURA DE LOS METODOS ABSTRACT
+	
 }

@@ -2,7 +2,7 @@ package polimorfismo.dinamico.clases;
 
 public class Persona {
 	
-int id;
+	int id;
 	
 	String nombre;
 	

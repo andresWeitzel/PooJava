@@ -1,6 +1,6 @@
 package polimorfismo.metodos.sobrecarga.interfaces;
 
-public interface I_Atleta {
+public interface I_Accion {
 	
 	public abstract String entrenar();
 	

@@ -1,108 +1,19 @@
 package polimorfismo.metodos.sobrecarga.interfaces;
 
-public class Atleta implements I_Atleta{
-	
-	
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Atleta implements I_Accion{
+	
 	String nombre;
 	String apellido;
 	int edad;
 	String tipoDoc;
 	String nroDoc;
-	
-	
-	
-	public Atleta(String nombre, String apellido, int edad, String tipoDoc, String nroDoc) {
-		super();
-		this.nombre = nombre;
-		this.apellido = apellido;
-		this.edad = edad;
-		this.tipoDoc = tipoDoc;
-		this.nroDoc = nroDoc;
-	}
-
-	
-	
-	
-
-	public String getNombre() {
-		return nombre;
-	}
-
-
-
-
-
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
-	}
-
-
-
-
-
-	public String getApellido() {
-		return apellido;
-	}
-
-
-
-
-
-	public void setApellido(String apellido) {
-		this.apellido = apellido;
-	}
-
-
-
-
-
-	public int getEdad() {
-		return edad;
-	}
-
-
-
-
-
-	public void setEdad(int edad) {
-		this.edad = edad;
-	}
-
-
-
-
-
-	public String getTipoDoc() {
-		return tipoDoc;
-	}
-
-
-
-
-
-	public void setTipoDoc(String tipoDoc) {
-		this.tipoDoc = tipoDoc;
-	}
-
-
-
-
-
-	public String getNroDoc() {
-		return nroDoc;
-	}
-
-
-
-
-
-	public void setNroDoc(String nroDoc) {
-		this.nroDoc = nroDoc;
-	}
-
-
-
 
 
 	@Override
@@ -143,13 +54,6 @@ public class Atleta implements I_Atleta{
 
 
 
-
-	@Override
-	public String toString() {
-		return "Atleta [nombre=" + nombre + ", apellido=" + apellido + ", edad=" + edad + ", tipoDoc=" + tipoDoc
-				+ ", nroDoc=" + nroDoc + "]";
-	}
-	
 	
 
 }
